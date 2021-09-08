@@ -1,6 +1,6 @@
 export default class Funcionamento {
-  constructor(funcionamento, activeClass) {
-    this.funcionamento = document.querySelector(funcionamento);
+  constructor(functionamento, activeClass) {
+    this.funcionamento = document.querySelector(functionamento);
     this.activeClass = activeClass;
   }
 
@@ -29,10 +29,10 @@ export default class Funcionamento {
   }
 
   init() {
-    if (this.ativaAberto) {
+    if (this.funcionamento) {
       this.dadosFuncionamento();
+      this.dadosAgora();
       this.ativaAberto();
-      this.dataAgora();
     }
     return this;
   }
